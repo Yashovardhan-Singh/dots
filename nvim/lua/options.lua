@@ -31,3 +31,6 @@ vim.opt.cmdheight = 0
 -- Ruler
 vim.opt.ruler = true
 vim.opt.colorcolumn = "80"
+
+-- Timeout
+vim.o.updatetime = 300
