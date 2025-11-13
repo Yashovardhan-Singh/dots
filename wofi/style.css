@@ -1,0 +1,64 @@
+/* ===============================
+   Wofi - Nord Frost Accent
+   Sharp + Minimal (no rounded corners)
+   =============================== */
+
+window {
+    margin: 0px;
+    border: 2px solid #88c0d0; /* frost blue border */
+    background-color: #2e3440; /* base background */
+    border-radius: 0;          /* sharp edges */
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-size: 14px;
+}
+
+#input {
+    margin: 5px;
+    padding: 6px 10px;
+    border: 2px solid #88c0d0; /* frost border */
+    border-radius: 0;          /* sharp */
+    color: #eceff4;            /* input text */
+    background-color: #4c566a; /* input background */
+}
+
+#inner-box {
+    margin: 5px;
+    padding: 5px;
+    border: 0;
+    background-color: #3b4252; /* list background */
+    border-radius: 0;          /* sharp */
+}
+
+#outer-box {
+    margin: 5px;
+    padding: 5px;
+    border: 0;
+    background-color: #2e3440; /* window background */
+    border-radius: 0;          /* sharp */
+}
+
+#scroll {
+    margin: 0px;
+    padding: 0px;
+}
+
+#text {
+    margin: 5px;
+    padding: 5px;
+    color: #d8dee9; /* normal text */
+}
+
+#entry:selected {
+    background-color: #88c0d0; /* frost blue */
+    color: #2e3440;            /* dark text on highlight */
+    border: 2px solid #8fbcbb; /* subtle frost accent border */
+    border-radius: 0;          /* sharp */
+}
+
+#entry:hover {
+    background-color: #8fbcbb; /* frost teal hover */
+    color: #2e3440;
+    border: 2px solid #88c0d0;
+    border-radius: 0;
+}
+

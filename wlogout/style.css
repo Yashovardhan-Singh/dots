@@ -1,0 +1,60 @@
+* {
+    background-image: none;
+    font-size: 14px;  /* font size */
+}
+
+window {
+    background-color: rgba(46, 52, 64, 0.6);
+}
+
+/* Buttons styling */
+button {
+    color: #eceff4;                 /* Nord snow */
+    background-color: #3b4252;      /* Nord dark gray */
+    outline-style: none;
+    border: none;
+    border-width: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    border-radius: 0px;             /* keep all inner corners sharp */
+    box-shadow: none;
+    text-shadow: none;
+    animation: gradient_f 20s ease-in; /* optional */
+}
+
+/* Hover/focus state */
+button:focus, button:hover {
+    background-color: #81a1c1;      /* Frost subtle hover */
+    background-size: 25%;
+    animation: none;                 /* stop gradient animation on hover */
+    border-radius: 0px;              /* keep inner corners sharp */
+    transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+}
+
+/* Individual button icons with Nord-aware fallback */
+#lock {
+    background-image: image(url("icons/lock_white.png"));
+    border-radius: 6px 0px 0px 6px;
+}
+
+#logout {
+    background-image: image(url("icons/logout_white.png"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown_white.png"));
+}
+
+#reboot {
+    background-image: image(url("icons/reboot_white.png"));
+    border-radius: 0px 6px 6px 0px;
+}
+
+/* Optional keyframes for gradient animation */
+@keyframes gradient_f {
+    0% { background-color: #3b4252; }
+    50% { background-color: #4c566a; }
+    100% { background-color: #3b4252; }
+}
+

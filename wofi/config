@@ -1,0 +1,41 @@
+# ~/.config/wofi/config
+
+# ===============================
+# General
+# ===============================
+show=drun
+term=foot
+prompt=Run:
+matching=fuzzy
+insensitive=true
+allow_markup=true
+parse_search=true
+
+# ===============================
+# Layout & Size
+# ===============================
+lines=8           # fewer lines → shorter vertically
+columns=1
+width=60%         # wider on X-axis
+height=25%        # shorter on Y-axis
+location=center   # perfectly centered
+dynamic_lines=false
+
+# ===============================
+# Behavior
+# ===============================
+no_actions=false
+always_parse_args=false
+hide_search=false
+allow_images=true
+image_size=24
+exec_search=true
+gtk_dark=true
+
+# ===============================
+# UX Improvements
+# ===============================
+# Makes navigation smoother with keyboard
+confirm_on_enter=true
+cycle=true        # allows arrow keys to wrap around
+

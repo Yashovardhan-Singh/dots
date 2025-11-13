@@ -1,0 +1,45 @@
+theme = "nord"
+
+[editor]
+line-number = "relative"
+mouse = false
+gutters = ["diff", "spacer", "diagnostics", "line-numbers", "spacer"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "position", "spinner", "spacer", "diagnostics"]
+right = ["register", "file-type", "file-encoding", "file-line-ending", "selections"]
+center = ["version-control", "file-name", "position-percentage"]
+separator = "|"
+mode.normal = "<Normal>"
+mode.insert = "<Insert>"
+mode.select = "<Select>"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+[editor.auto-save]
+after-delay.enable = true
+after-delay.timeout = 6000
+
+[editor.whitespace]
+render = "all"
+
+[editor.whitespace.characters]
+space = "."
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
+
+[editor.indent-guides]
+render = true
+character = "|"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "warning"
